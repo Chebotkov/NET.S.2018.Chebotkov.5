@@ -1,0 +1,6 @@
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\EuclideanAlgorithms\bin\Debug\EuclideanAlgorithms.dll
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\EuclideanAlgorithms\bin\Debug\EuclideanAlgorithms.pdb
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\EuclideanAlgorithms\obj\Debug\EuclideanAlgorithms.csproj.CoreCompileInputs.cache
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\EuclideanAlgorithms\obj\Debug\EuclideanAlgorithms.dll
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\EuclideanAlgorithms\obj\Debug\EuclideanAlgorithms.pdb
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\EuclideanAlgorithms\obj\Debug\EuclideanAlgorithms.csprojResolveAssemblyReference.cache
