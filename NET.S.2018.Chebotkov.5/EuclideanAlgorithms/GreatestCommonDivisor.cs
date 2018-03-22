@@ -3,8 +3,9 @@
     /// <summary>
     /// This class contains Euclidean algorithm implementation. 
     /// </summary>
-    public class GreatestCommonDivisor
+    public static class GreatestCommonDivisor
     {
+        #region GreatestCommonDivisor methods
         /// <summary>
         /// This method implements Euclidean algorithm.
         /// </summary>
@@ -81,5 +82,6 @@
 
             return result;
         }
+        #endregion
     }
 }

@@ -3,8 +3,9 @@
     /// <summary>
     /// This class contains Steins algorithm implementation. 
     /// </summary>
-    public class BinaryGreatestCommonDivisor
+    public static class BinaryGreatestCommonDivisor
     {
+        #region GreatestCommonDivisor methods
         /// <summary>
         /// This method implements Steins algorithm.
         /// </summary>
@@ -95,5 +96,6 @@
 
             return result;
         }
+        #endregion
     }
 }

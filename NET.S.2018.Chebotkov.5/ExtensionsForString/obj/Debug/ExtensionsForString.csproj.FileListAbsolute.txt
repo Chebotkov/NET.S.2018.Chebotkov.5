@@ -1,0 +1,6 @@
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionsForString\bin\Debug\ExtensionsForString.dll
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionsForString\bin\Debug\ExtensionsForString.pdb
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionsForString\obj\Debug\ExtensionsForString.csprojResolveAssemblyReference.cache
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionsForString\obj\Debug\ExtensionsForString.csproj.CoreCompileInputs.cache
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionsForString\obj\Debug\ExtensionsForString.dll
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionsForString\obj\Debug\ExtensionsForString.pdb

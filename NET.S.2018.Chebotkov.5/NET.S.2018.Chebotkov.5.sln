@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreatestCommonDivisor.Tests
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteinsAlgorithm", "SteinsAlgorithm\SteinsAlgorithm.csproj", "{F7D64285-3754-44B1-A737-4F34B393F604}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsForString", "ExtensionsForString\ExtensionsForString.csproj", "{5FFAB8D6-860D-4274-867F-4BC7E75F3BD2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverTo.Tests", "ConverTo.Tests\ConverTo.Tests.csproj", "{76CFCAE2-AE8F-4CB7-B99B-6321D55A34F7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{F7D64285-3754-44B1-A737-4F34B393F604}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F7D64285-3754-44B1-A737-4F34B393F604}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F7D64285-3754-44B1-A737-4F34B393F604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5FFAB8D6-860D-4274-867F-4BC7E75F3BD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5FFAB8D6-860D-4274-867F-4BC7E75F3BD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5FFAB8D6-860D-4274-867F-4BC7E75F3BD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5FFAB8D6-860D-4274-867F-4BC7E75F3BD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76CFCAE2-AE8F-4CB7-B99B-6321D55A34F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76CFCAE2-AE8F-4CB7-B99B-6321D55A34F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76CFCAE2-AE8F-4CB7-B99B-6321D55A34F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76CFCAE2-AE8F-4CB7-B99B-6321D55A34F7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
