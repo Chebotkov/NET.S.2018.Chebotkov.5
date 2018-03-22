@@ -12,9 +12,11 @@ namespace ExtensionsForString
         {
             double integerPart = Math.Ceiling(number);
             char[] binaryArrayOfIntegers = new char[System.Runtime.InteropServices.Marshal.SizeOf(number)*8-1];
-            GetBinaryRepresentationOfIntegerPart(integerPart, ref binaryArrayOfIntegers);
-            char[] fraction = new char[System.Runtime.InteropServices.Marshal.SizeOf(number) * 8-1];
+            char[] fraction = GetBinaryRepresentationOfIntegerPart(integerPart);
             GetBinaryRepresentationOfFraction(number - integerPart, ref fraction);
+            char[] result = new char[System.Runtime.InteropServices.Marshal.SizeOf(number)];
+            result[0] = number < 0 ? '1' : '0';
+
 
             return "da";
         }
@@ -24,33 +26,42 @@ namespace ExtensionsForString
         /// </summary>
         /// <param name="number">Number</param>
         /// <returns>Array of integer numbers</returns>
-        private static void GetBinaryRepresentationOfIntegerPart(double number, ref char[] binaryArrayOfIntegers)
+        private static char[] GetBinaryRepresentationOfIntegerPart(double number)
         {
-            int i = binaryArrayOfIntegers.Length - 1;
+            List<char> list = new List<char>();
             while (number >= 1)
             {
-                if (number % 2 == 0)
-                {
-                    binaryArrayOfIntegers[i] = '0';
-                }
-                else
-                {
-                    binaryArrayOfIntegers[i] = '1';
-                }
-
+                list.Insert(0, number % 2 == 0 ? '0' : '1');
+                
                 number /= 2;
-                i--;
             }
+
+            return list.ToArray<char>();
         }
 
         private static void GetBinaryRepresentationOfFraction(double number, ref char [] fraction)
         {
+            for (int i=0; i<GetCountOfDigitsInFraction(number); i++)
+            {
+                fraction[i] = Math.Ceiling(number * 2) == 1 ? '1' : '0';
 
+
+            }
         }
 
-        private static void GetCountOfDigitsInFraction(double number)
+        public static int GetCountOfDigitsInFraction(double number)
         {
+            double temp = number * 10;
+            int count = 1;
 
+            while(Math.Ceiling(temp) - number * 10 !=0)
+            {
+                count++;
+                temp *= 10;
+                number *= 10;
+            }
+
+            return count;
         }
 
     }
