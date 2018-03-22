@@ -24,3 +24,5 @@ D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\GreatestCommonDivisor.T
 D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\GreatestCommonDivisor.Tests\bin\Debug\EuclideanAlgorithms.pdb
 D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\GreatestCommonDivisor.Tests\bin\Debug\nunit.framework.pdb
 D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\GreatestCommonDivisor.Tests\bin\Debug\nunit.framework.xml
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\GreatestCommonDivisor.Tests\bin\Debug\SteinsAlgorithm.dll
+D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\GreatestCommonDivisor.Tests\bin\Debug\SteinsAlgorithm.pdb

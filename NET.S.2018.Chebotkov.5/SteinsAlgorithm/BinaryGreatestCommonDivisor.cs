@@ -1,57 +1,71 @@
-﻿namespace EuclideanAlgorithms
+﻿namespace SteinsAlgorithm
 {
     /// <summary>
-    /// This class contains Euclidean algorithm implementation. 
+    /// This class contains Steins algorithm implementation. 
     /// </summary>
-    public class GreatestCommonDivisor
+    public class BinaryGreatestCommonDivisor
     {
         /// <summary>
-        /// This method implements Euclidean algorithm.
+        /// This method implements Steins algorithm.
         /// </summary>
         /// <param name="firstNumber">First number.</param>
         /// <param name="secondNumber">Second number.</param>
         /// <returns>Greatest common divisor</returns>
         public static int GetGCD(int firstNumber, int secondNumber)
         {
-            if(firstNumber == 0 || secondNumber == 0)
+            if (firstNumber == 0)
             {
-                throw new System.ArgumentOutOfRangeException("Number can't be equal 0");
+                return secondNumber;
             }
 
-            if(firstNumber<0)
+            if (secondNumber == 0)
+            {
+                return firstNumber;
+            }
+
+            if (firstNumber < 0)
             {
                 firstNumber = -firstNumber;
             }
 
-            if(secondNumber<0)
+            if (secondNumber < 0)
             {
                 secondNumber = -secondNumber;
             }
 
-            while (firstNumber != 0 && secondNumber != 0)
+            if (firstNumber == secondNumber)
             {
-                if (firstNumber % secondNumber == 0)
-                {
-                    return secondNumber;
-                }
-
-                if (secondNumber % firstNumber == 0)
-                {
-                    return firstNumber;
-                }
-
-                if (secondNumber > firstNumber)
-                {
-                    secondNumber %= firstNumber;
-                }
-
-                if (firstNumber > secondNumber)
-                {
-                    firstNumber %= secondNumber;
-                }
+                return firstNumber;
             }
 
-            return firstNumber + secondNumber;
+            if (firstNumber == 1 || secondNumber == 1)
+            {
+                return 1;
+            }
+
+            if (firstNumber % 2 == 0 && secondNumber % 2 == 0)
+            {
+                return 2 * GetGCD(firstNumber / 2, secondNumber / 2);
+            }
+
+            if (firstNumber % 2 == 0)
+            {
+                return GetGCD(firstNumber / 2, secondNumber);
+            }
+
+            if (secondNumber % 2 == 0)
+            {
+                return GetGCD(firstNumber, secondNumber / 2);
+            }
+
+            if (firstNumber > secondNumber)
+            {
+                return GetGCD((firstNumber - secondNumber) / 2, secondNumber);
+            }
+            else
+            {
+                return GetGCD((secondNumber - firstNumber) / 2, firstNumber);
+            }
         }
 
         /// <summary>
@@ -71,7 +85,7 @@
         /// </summary>
         /// <param name="numbers">Numbers.</param>
         /// <returns>Greatest common divisor</returns>
-        public static int GetGCD(params int[] numbers)
+        public static int GetGCD(params int [] numbers)
         {
             int result = GetGCD(numbers[0], numbers[1]);
             for (int i = 2; i < numbers.Length; i++)

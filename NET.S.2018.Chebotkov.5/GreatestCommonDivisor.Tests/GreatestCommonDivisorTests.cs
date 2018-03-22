@@ -50,5 +50,38 @@ namespace GreatestCommonDivisor.Tests
         {
             Assert.Throws<System.ArgumentOutOfRangeException>(() => EuclideanAlgorithms.GreatestCommonDivisor.GetGCD(1, 3, 3, 3, 0, 4));
         }
+
+        [TestCase(5, 0, 5)]
+        [TestCase(4, 4, 0)]
+        [TestCase(1, 5, 1)]
+        [TestCase(1, 1, 5)]
+        [TestCase(18, 36, 18)]
+        [TestCase(3, -3, -6)]
+        [TestCase(11, 121, -33)]
+        public void TestsForGreatestCommonDivisorSA(int expectedResult, int firstNum, int secondNum)
+        {
+            int result = SteinsAlgorithm.BinaryGreatestCommonDivisor.GetGCD(firstNum, secondNum);
+
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestCase(1, 324423, 324233, 232323)]
+        [TestCase(1, 23, 32423343, 325324326)]
+        public void TestsForGreatestCommonDivisorSA(int expectedResult, int firstNum, int secondNum, int thirdNum)
+        {
+            int result = SteinsAlgorithm.BinaryGreatestCommonDivisor.GetGCD(firstNum, secondNum, thirdNum);
+
+            Assert.AreEqual(expectedResult, result);
+        }
+
+        [TestCase(546, 1092, 546, 2184, 4368)]
+        [TestCase(1, 123213, 324234, 24324121, 43683)]
+        [TestCase(3, 171, 1233, 45, 111222111)]
+        public void TestsForGreatestCommonDivisorSA(int expectedResult, params int[] numbers)
+        {
+            int result = SteinsAlgorithm.BinaryGreatestCommonDivisor.GetGCD(numbers);
+
+            Assert.AreEqual(expectedResult, result);
+        }
     }
 }

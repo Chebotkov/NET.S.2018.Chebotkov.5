@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EuclideanAlgorithms", "Eucl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GreatestCommonDivisor.Tests", "GreatestCommonDivisor.Tests\GreatestCommonDivisor.Tests.csproj", "{E81F3704-460D-4A87-99F0-3D2EF1DF9A56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SteinsAlgorithm", "SteinsAlgorithm\SteinsAlgorithm.csproj", "{F7D64285-3754-44B1-A737-4F34B393F604}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{E81F3704-460D-4A87-99F0-3D2EF1DF9A56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E81F3704-460D-4A87-99F0-3D2EF1DF9A56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E81F3704-460D-4A87-99F0-3D2EF1DF9A56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7D64285-3754-44B1-A737-4F34B393F604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7D64285-3754-44B1-A737-4F34B393F604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7D64285-3754-44B1-A737-4F34B393F604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7D64285-3754-44B1-A737-4F34B393F604}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
