@@ -19,9 +19,13 @@ namespace ExtensionsForString
             char[] digits = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
 
             uint result = (uint)digits.IndexOf(number[number.Length - 1], notation);
-            for (int i = number.Length - 2, power = notation; i >= 0; i--, power *= notation)
+            uint power = (uint)notation;
+            checked
             {
-                result += (uint)(digits.IndexOf(number[i], notation) * power);
+                for (int i = number.Length - 2; i >= 0; i--, power *= (uint)notation)
+                {
+                    result += (uint)digits.IndexOf(number[i], notation) * power;
+                }
             }
 
             return result;

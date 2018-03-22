@@ -1,6 +1,5 @@
-﻿using System;
+﻿using ExtensionsForString;
 using NUnit.Framework;
-using ExtensionsForString;
 
 namespace ConverTo.Tests
 {
@@ -18,7 +17,7 @@ namespace ConverTo.Tests
         {
             uint result = number.ConvertTo(notation);
 
-            Assert.AreEqual(expectedResult, result);
+            Assert.AreEqual((uint)expectedResult, result);
         }
 
         [TestCase("1AeF101", 2)]
@@ -28,6 +27,12 @@ namespace ConverTo.Tests
         public void TestsForGreatestCommonDivisor(string number, int notation)
         {
             Assert.Throws<System.ArgumentException>(() => number.ConvertTo(notation));
+        }
+
+        [TestCase("111111111111111111111111111111111111111111111111111111", 2)]
+        public void TestsForGreatestCommonDivisorOFE(string number, int notation)
+        {
+            Assert.Throws<System.OverflowException>(() => number.ConvertTo(notation));
         }
     }
 }
