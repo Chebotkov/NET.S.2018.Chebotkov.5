@@ -83,9 +83,7 @@ namespace ExtensionsForString
         {
             for (int i = 0; i < digits.Length; i++)
             {
-                char currentDigit = digits[i];
-
-                if (Char.ToUpper(digit) == currentDigit)
+                if (Char.ToUpper(digit) == digits[i])
                 {
                     if (i > notation)
                     {
