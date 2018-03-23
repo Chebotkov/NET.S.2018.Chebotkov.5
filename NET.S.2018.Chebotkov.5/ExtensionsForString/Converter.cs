@@ -27,18 +27,40 @@ namespace ExtensionsForString
             GetSymbols();
         }
 
+        /// <summary>
+        /// Property for systemBase.
+        /// </summary>
+        public int SystemBase
+        {
+            get
+            {
+                return systemBase;
+            }
+        }
+
+        /// <summary>
+        /// Property for symbols.
+        /// </summary>
+        public char[] Symbols
+        {
+            get
+            {
+                return symbols;
+            }
+        }
+
+        /// <summary>
+        /// Sets a library for notation.
+        /// </summary>
         private void GetSymbols()
         {
-            char[] digits = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-            symbols = new char[systemBase - 1];
+            char[] digits = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F' };
+            symbols = new char[systemBase];
             for (int i = 0; i < systemBase; i++)
             {
                 symbols[i] = digits[i];
             }
         }
-
-        public int SystemBase { get; }
-        public char[] Symbols { get; }
     }
 
     /// <summary>
@@ -85,11 +107,6 @@ namespace ExtensionsForString
             {
                 if (Char.ToUpper(digit) == digits[i])
                 {
-                    if (i > notation)
-                    {
-                        throw new ArgumentException("Number does not match the Notation!");
-                    }
-
                     return i;
                 }
             }
