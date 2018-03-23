@@ -60,10 +60,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\EuclideanAlgorithms\EuclideanAlgorithms.csproj">
-      <Project>{cba41b66-92e8-4f8b-9a41-dfa57d722f86}</Project>
-      <Name>EuclideanAlgorithms</Name>
-    </ProjectReference>
     <ProjectReference Include="..\SteinsAlgorithm\SteinsAlgorithm.csproj">
       <Project>{f7d64285-3754-44b1-a737-4f34b393f604}</Project>
       <Name>SteinsAlgorithm</Name>
