@@ -4,3 +4,9 @@ D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\SteinsAlgorithm\obj\Deb
 D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\SteinsAlgorithm\obj\Debug\SteinsAlgorithm.csproj.CoreCompileInputs.cache
 D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\SteinsAlgorithm\obj\Debug\SteinsAlgorithm.dll
 D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\SteinsAlgorithm\obj\Debug\SteinsAlgorithm.pdb
+C:\Users\Anzhelika_Kravchuk\Desktop\temp\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\SteinsAlgorithm\bin\Debug\SteinsAlgorithm.dll
+C:\Users\Anzhelika_Kravchuk\Desktop\temp\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\SteinsAlgorithm\bin\Debug\SteinsAlgorithm.pdb
+C:\Users\Anzhelika_Kravchuk\Desktop\temp\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\SteinsAlgorithm\obj\Debug\SteinsAlgorithm.csprojResolveAssemblyReference.cache
+C:\Users\Anzhelika_Kravchuk\Desktop\temp\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\SteinsAlgorithm\obj\Debug\SteinsAlgorithm.csproj.CoreCompileInputs.cache
+C:\Users\Anzhelika_Kravchuk\Desktop\temp\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\SteinsAlgorithm\obj\Debug\SteinsAlgorithm.dll
+C:\Users\Anzhelika_Kravchuk\Desktop\temp\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\SteinsAlgorithm\obj\Debug\SteinsAlgorithm.pdb
