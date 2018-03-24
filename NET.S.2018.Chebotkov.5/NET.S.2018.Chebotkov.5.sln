@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionsForString", "Exte
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConverTo.Tests", "ConverTo.Tests\ConverTo.Tests.csproj", "{76CFCAE2-AE8F-4CB7-B99B-6321D55A34F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExtensionForDouble", "ExtensionForDouble\ExtensionForDouble.csproj", "{5C72241D-7BA3-429B-AF60-7D5691F22267}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{76CFCAE2-AE8F-4CB7-B99B-6321D55A34F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76CFCAE2-AE8F-4CB7-B99B-6321D55A34F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76CFCAE2-AE8F-4CB7-B99B-6321D55A34F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C72241D-7BA3-429B-AF60-7D5691F22267}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C72241D-7BA3-429B-AF60-7D5691F22267}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C72241D-7BA3-429B-AF60-7D5691F22267}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C72241D-7BA3-429B-AF60-7D5691F22267}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
