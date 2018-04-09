@@ -1,10 +1,32 @@
-﻿namespace SteinsAlgorithm
+﻿using System;
+
+namespace SteinsAlgorithm
 {
     /// <summary>
     /// This class contains Steins algorithm implementation. 
     /// </summary>
     public static class GreatestCommonDivisorMethods
     {
+        private static int GetGCDWithDelegate(Func<int, int, int> func, params int [] numbers)
+        {
+            int result = func(numbers[0], numbers[1]);
+            for (int i = 2; i < numbers.Length; i++)
+            {
+                result = func(result, numbers[i]);
+                if (result == 1)
+                {
+                    return result;
+                }
+            }
+
+            if (result == Int32.MinValue)
+            {
+                throw new System.ArgumentOutOfRangeException("Result is greater than max possible value.");
+            }
+
+            return result;
+        }
+
         #region BinaryGreatestCommonDivisor methods
         /// <summary>
         /// This method implements Steins algorithm.
@@ -15,12 +37,13 @@
         /// <returns>Greatest common divisor</returns>
         public static int GetBGCD(int firstNumber, int secondNumber)
         {
-            if (firstNumber == System.Int32.MinValue && secondNumber == System.Int32.MinValue)
+            int result = GetBGCDWithoutExc(firstNumber, secondNumber);
+            if (result == Int32.MinValue)
             {
-                throw new System.ArgumentOutOfRangeException("Result is greater then max possible value.");
+                throw new System.ArgumentOutOfRangeException("Result is greater than max possible value.");
             }
 
-            return GetBGCDWithoutExc(firstNumber, secondNumber);
+            return result;
         }
 
         /// <summary>
@@ -32,7 +55,6 @@
         /// <returns>Greatest common divisor</returns>
         public static int GetBGCD(int firstNumber, int secondNumber, int thirdNumber)
         {
-            AreAllEqualToInt32MinValue(firstNumber, secondNumber, thirdNumber);
             return GetBGCDWithoutExc(GetBGCDWithoutExc(firstNumber, secondNumber), thirdNumber);
         }
 
@@ -43,14 +65,7 @@
         /// <returns>Greatest common divisor</returns>
         public static int GetBGCD(params int[] numbers)
         {
-            AreAllEqualToInt32MinValue(numbers);
-            int result = GetBGCDWithoutExc(numbers[0], numbers[1]);
-            for (int i = 2; i < numbers.Length; i++)
-            {
-                result = GetBGCDWithoutExc(result, numbers[i]);
-            }
-
-            return result;
+            return GetGCDWithDelegate(GetBGCDWithoutExc, numbers);
         }
 
         /// <summary>
@@ -126,12 +141,13 @@
         /// <returns>Greatest common divisor</returns>
         public static int GetGCD(int firstNumber, int secondNumber)
         {
-            if (firstNumber == System.Int32.MinValue && secondNumber == System.Int32.MinValue)
+            int result = GetGCDWithoutExc(firstNumber, secondNumber);
+            if (result == Int32.MinValue)
             {
-                throw new System.ArgumentOutOfRangeException("Result is greater then max possible value.");
+                throw new System.ArgumentOutOfRangeException("Result is greater than max possible value.");
             }
 
-            return GetGCDWithoutExc(firstNumber, secondNumber);
+            return result;
         }
 
         /// <summary>
@@ -153,14 +169,7 @@
         /// <returns>Greatest common divisor</returns>
         public static int GetGCD(params int[] numbers)
         {
-            AreAllEqualToInt32MinValue(numbers);
-            int result = GetGCDWithoutExc(numbers[0], numbers[1]);
-            for (int i = 2; i < numbers.Length; i++)
-            {
-                result = GetGCDWithoutExc(result, numbers[i]);
-            }
-
-            return result;
+            return GetGCDWithDelegate(GetGCDWithoutExc, numbers);
         }
         
         /// <summary>
@@ -215,27 +224,6 @@
             }
 
             return firstNumber + secondNumber;
-        }
-        #endregion
-
-        #region Checker
-        /// <summary>
-        /// Checks if all elements in array are equal to Int32.MinValue.
-        /// </summary>
-        /// <param name="array"></param>
-        /// <exception cref="System.ArgumentOutOfRangeException">Throws when all arguments are equal to Int32.MinValue.</exception>
-        /// <returns>False if there is one element doesn't equal to Int32.MinValue in array.</returns>
-        private static bool AreAllEqualToInt32MinValue(params int [] array)
-        {
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (array[i] != System.Int32.MinValue)
-                {
-                    return false;
-                }
-            }
-
-            throw new System.ArgumentOutOfRangeException("Result is greater then max possible value.");
         }
         #endregion
     }
