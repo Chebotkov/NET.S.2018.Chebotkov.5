@@ -1,6 +1,0 @@
-D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionForDouble\bin\Debug\ExtensionForDouble.dll
-D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionForDouble\bin\Debug\ExtensionForDouble.pdb
-D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionForDouble\obj\Debug\ExtensionForDouble.csprojResolveAssemblyReference.cache
-D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionForDouble\obj\Debug\ExtensionForDouble.csproj.CoreCompileInputs.cache
-D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionForDouble\obj\Debug\ExtensionForDouble.dll
-D:\Courses\NET.S.2018.Chebotkov.5\NET.S.2018.Chebotkov.5\ExtensionForDouble\obj\Debug\ExtensionForDouble.pdb
